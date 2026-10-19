@@ -1,0 +1,9 @@
+{
+  "name": "xlj-tools",
+  "private": true,
+  "type": "module",
+  "description": "本地验证脚本：使用系统自带 Edge 无头浏览器截图比对页面样式",
+  "dependencies": {
+    "puppeteer-core": "^24.0.0"
+  }
+}

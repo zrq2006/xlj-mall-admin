@@ -1,0 +1,58 @@
+server:
+  port: 8080
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+
+spring:
+  application:
+    name: xlj-mall-admin
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/xlj_mall?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+    username: xlj_mall
+    password: XljMall_2026
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 2
+      connection-timeout: 10000
+  jpa:
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
+    properties:
+      hibernate:
+        jdbc.time_zone: Asia/Shanghai
+        format_sql: false
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 5MB
+  mvc:
+    problemdetails:
+      enabled: false
+
+app:
+  auth:
+    # 演示项目使用固定密钥，生产环境请通过环境变量 APP_AUTH_SECRET 覆盖
+    secret: ${APP_AUTH_SECRET:xlj-mall-admin-token-secret-2026}
+    token-ttl-minutes: 480
+    # 首次启动时若 admin_user 为空则自动创建该账号
+    default-username: admin
+    default-password: admin123
+    default-nickname: admin
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: alpha
+  api-docs:
+    path: /v3/api-docs
+
+logging:
+  level:
+    root: INFO
+    com.xlj.mall: INFO
+    org.hibernate.SQL: WARN

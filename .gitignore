@@ -1,0 +1,34 @@
+# 依赖与构建产物
+node_modules/
+frontend/dist/
+backend/target/
+tools/node_modules/
+logs/
+
+# 本地工具（Maven 发行包等，体积较大，不入库）
+.tools/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# 系统
+Thumbs.db
+.DS_Store
+
+# 文档生成中间产物与本地工具副本
+docs_src/_libs/
+docs_src/_build/
+docs_src/_preview/
+__pycache__/
+*.pyc
+*.log
+*.pid
+
+# 课程交付文档及其生成脚本（不纳入仓库）
+docs/
+docs_src/
+
+# 设计参考素材（不纳入仓库）
+原始网页/

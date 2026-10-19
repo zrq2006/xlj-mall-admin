@@ -1,0 +1,149 @@
+/* 全局基础样式：与 Element Plus 默认字体保持一致 */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei',
+    '微软雅黑', Arial, sans-serif;
+  font-size: 14px;
+  color: #303133;
+  background: #f0f2f5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #409eff;
+  text-decoration: none;
+}
+
+/* 列表页：整块白色内容区，与原始后台保持一致 */
+.panel {
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  min-height: calc(100vh - 60px - 32px);
+}
+
+.filter-form {
+  margin-bottom: 4px;
+}
+
+.filter-form .el-form-item {
+  margin-bottom: 16px;
+  margin-right: 24px;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.el-table {
+  --el-table-header-text-color: #909399;
+}
+
+.el-table th.el-table__cell {
+  font-weight: 500;
+}
+
+.pager {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.cell-sub {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #909399;
+  line-height: 18px;
+  text-align: center;
+  word-break: break-all;
+  white-space: normal;
+}
+
+.product-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.product-cell .product-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+}
+
+.product-cell .product-name {
+  margin-top: 8px;
+  font-weight: 600;
+  color: #303133;
+  line-height: 20px;
+}
+
+.logo-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background: #f5f7fa;
+  border: 1px solid #ebeef5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #606266;
+}
+
+.cat-image-empty {
+  width: 80px;
+  height: 60px;
+  border: 1px dashed #dcdfe6;
+  border-radius: 4px;
+  background: #fafafa;
+  color: #c0c4cc;
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.muted {
+  color: #c0c4cc;
+  font-size: 13px;
+}
+
+.dialog-tip {
+  font-size: 12px;
+  color: #909399;
+  line-height: 20px;
+}
+
+.import-result {
+  margin-top: 12px;
+  padding: 10px 12px;
+  background: #f5f7fa;
+  border-radius: 4px;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.import-result .error-line {
+  color: #f56c6c;
+}
+
+.emoji-icon {
+  font-size: 28px;
+  line-height: 1;
+}
